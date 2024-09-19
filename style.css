@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(224, 223, 222);
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0 5%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+header nav li {
+    list-style: none;
+    margin-left: 2rem;
+    display: inline-block;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+header nav li:hover a {
+    background-color: rgb(224, 223, 222);
+}
+
+main {
+    padding-top: 2%;
+    background-color: rgb(224, 223, 222);
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 2% auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.container p {
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.about {
+    padding: 2% 0;
+    background-color: rgb(224, 223, 222);
+}
+
+.about .question {
+    width: 80%;
+    margin: 2% auto;
+    background-color: white;
+    padding: 1rem;
+}
+
+.accordion {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.cards {
+    padding: 5% 0;
+    background-color: rgb(224, 223, 222);
+}
+
+.cards h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards .figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+footer {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgb(224, 223, 222);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 5%;
+    }
+
+    header h1 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav li {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .accordion, .about .question, .cards .figure {
+        width: 90%;
+    }
+
+    .cards .figure {
+        justify-content: center;
+    }
+
+    .card {
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav li {
+        margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+}
+                                                                                                      
